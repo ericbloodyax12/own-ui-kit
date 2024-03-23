@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "main": "./dist/index.js",
   "scripts": {
-    "pub": "webpack &&"
+    "pub": "webpack && npm version patch && yarn publish"
   },
   "license": "MIT",
   "devDependencies": {
