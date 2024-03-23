@@ -1,2 +1,3 @@
 import MyButton from "./components/MyButton/MyButton";
-export { MyButton };
+import MyInput from "./components/MyInput/MyInput";
+export { MyButton, MyInput };
