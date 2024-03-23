@@ -1,6 +1,6 @@
 {
   "name": "erik-ui-kit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./dist/index.js",
   "scripts": {
     "pub": "webpack && npm version patch && yarn publish"
