@@ -1,7 +1,5 @@
-import MyButton from "./components/MyButton/MyButton";
-import MyInput from "./components/MyInput/MyInput";
+import {Compact} from "./array";
 
 export {
-  MyButton,
-    MyInput
+  Compact
 }
