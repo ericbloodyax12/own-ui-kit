@@ -1,5 +1,5 @@
-import {Compact} from "./array";
+import {BrsArray} from "./array";
 
 export {
-  Compact
+  BrsArray
 }
