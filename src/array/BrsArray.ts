@@ -11,19 +11,18 @@ Compact<T> (arr: Array<T>): Array<T> {
   })
   return clearArr
 }
-Union<T> (arrays: Array<T[]>, unicItems: boolean): T[] {
-  unicItems = true
-  let resArray: T[] = []
-   arrays.forEach((arr) => {
-    arr.forEach((el) => {
-      if (unicItems ? !resArray.includes(el) : true ) {
+Union (arrays: Array<(number | string)[]>):(number | string)[] {
+  let resArray:(number | string)[] = []
+   arrays.forEach((arr: (number | string)[]) => {
+    arr.forEach((el: number|string) => {
+      if (!resArray.includes(el)) {
         return resArray.push(el)
       }
     })
   })
   return resArray
 }
-Take<T> (array: T[], n:number): T[] {
+Take (array: (number | string)[], n:number): (number | string)[] {
   if (n <= array.length) {
     return array.slice(0, n);
   } else {
@@ -31,7 +30,7 @@ Take<T> (array: T[], n:number): T[] {
     return array;
   }
 }
-Uniq<T> (array:T[]): T[] {
+Uniq (array:(number | string)[]): (number | string)[] {
     return  array.filter((el, index) => {
      return array.indexOf(el) === index
     })
