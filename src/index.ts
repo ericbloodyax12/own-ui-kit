@@ -1,5 +1,5 @@
-import {BrsArray} from "./array";
+import {arrayHelper} from "./array";
 
 export {
-  BrsArray
+  arrayHelper
 }

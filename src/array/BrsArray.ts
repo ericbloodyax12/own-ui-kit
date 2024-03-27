@@ -1,7 +1,7 @@
 /** Creates an array with all falsey values removed.
  *  The values false, null, 0, "", undefined,
  *  and NaN are falsey. **/
-export class BrsArray {
+class BrsArray {
   constructor() {
   }
 Compact<T> (arr: Array<T>): Array<T> {
@@ -36,3 +36,5 @@ Uniq (array:(number | string)[]): (number | string)[] {
     })
 }
 }
+
+export const arrayHelper = new BrsArray();
