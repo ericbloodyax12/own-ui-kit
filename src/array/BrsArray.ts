@@ -31,4 +31,9 @@ Take<T> (array: T[], n:number): T[] {
     return array;
   }
 }
+Uniq<T> (array:T[]): T[] {
+    return  array.filter((el, index) => {
+     return array.indexOf(el) === index
+    })
+}
 }
